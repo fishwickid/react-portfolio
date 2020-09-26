@@ -17,6 +17,20 @@ class Landing extends Component {
                 <h2>Full Stack Web Developer</h2>
                 <hr />
                 <p>HTML/CSS | Bootstrap | Javascript | React | React Native | NodeJS | Express | MongoDB</p>
+               
+                <div className="social-links">
+
+                {/* LinkedIn */}
+                    <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                        <i className="fa fa-linkedin-square" aria-hidden="true" />
+                    </a>
+
+                {/* GitHub */}
+                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                        <i className="fa fa-github-square" aria-hidden="true" />
+                    </a>
+
+                </div>
               </div>
             </Cell>
           </Grid>
