@@ -8,7 +8,7 @@ function App() {
   return (
     <div style={{ height: "800px", position: "relative" }}>
       <Layout fixedHeader>
-        <Header
+        <Header className='header-color'
           title={
             <span>
               <strong>The Title</strong>
