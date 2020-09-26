@@ -22,27 +22,84 @@ class Projects extends Component {
   toggleCategories() {
     if (this.state.activeTab === 0) {
       return (
-        <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+        <div className="projects-grid">
+        {/* Project 1 Card */}
+        <Card shadow={2} style={{ minWidth: "450", margin: "10px" }}>
           <CardTitle
             style={{
               color: "#fff",
-              height: "176px",
-              background: "url(https://reactjs.org/logo-og.png) center / cover",
+              height: "200px",
+              background: "url(https://fishwickid.github.io/homework_week2/Images/Wine-2-Dine.png) center / cover",
             }}
           >
-            Javascript Project #1
+            
           </CardTitle>
           <CardText>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy
+            <h3>Wine 2 Dine</h3> 
+            <p>Discover the perfect wine and the best BYO restaurant near you</p>
           </CardText>
           <CardActions border>
-            <button coloured>GitHub</button>
+            <Button coloured href="https://fishwickid.github.io/team_project_01/" target="_blank">SEE PROJECT</Button>
           </CardActions>
           <CardMenu style={{ color: "#fff" }}>
             <IconButton name="share" />
           </CardMenu>
         </Card>
+
+        
+
+        {/* Project 2 Card */}
+        <Card shadow={2} style={{ minWidth: "450", margin: "10px" }}>
+          <CardTitle
+            style={{
+              color: "#fff",
+              height: "200px",
+              background: "url(https://fishwickid.github.io/homework_week2/Images/Day-Planner.png) center / cover",
+            }}
+          >
+            
+          </CardTitle>
+          <CardText>
+            <h3>Workout Planner</h3> 
+            <p>Plan your day and your workouts with this handy scheduler</p>
+          </CardText>
+          <CardActions border>
+            <Button coloured href="https://fishwickid.github.io/Work-Day-Schedule/" target="_blank">SEE PROJECT</Button>
+          </CardActions>
+          <CardMenu style={{ color: "#fff" }}>
+            <IconButton name="share" />
+          </CardMenu>
+        </Card>
+
+        {/* Project 3 Card */}
+        <Card shadow={2} style={{ minWidth: "450", margin: "10px" }}>
+          <CardTitle
+            style={{
+              color: "#fff",
+              height: "200px",
+              background: "url(https://fishwickid.github.io/homework_week2/Images/Javascript-Quiz.jpg) center / cover",
+            }}
+          >
+            
+          </CardTitle>
+          <CardText>
+            <h3>Javascript Quiz</h3> 
+            <p>Test your understanding of Javascript with this simple quiz app</p>
+          </CardText>
+          <CardActions border>
+            <Button coloured href="https://fishwickid.github.io/Javascript-Quiz/quizIndex.html" target="_blank">SEE PROJECT</Button>
+          </CardActions>
+          <CardMenu style={{ color: "#fff" }}>
+            <IconButton name="share" />
+          </CardMenu>
+        </Card>
+      
+
+
+</div>
+
+
+        
       );
     } else if (this.state.activeTab === 1) {
       return (
@@ -72,13 +129,13 @@ class Projects extends Component {
           <Tab>React</Tab>
         </Tabs>
 
-        <section className="projects-grid">
-          <Grid className="projects-grid">
-            <Cell col={12}>
+       
+          <Grid>
+            <Cell col={12} style={{textAlign: "center"}}>
               <div className="content">{this.toggleCategories()}</div>
             </Cell>
           </Grid>
-        </section>
+        
       </div>
     );
   }

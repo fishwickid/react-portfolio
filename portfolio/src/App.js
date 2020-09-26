@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 
 function App() {
   return (
-    <div style={{ height: "800px", position: "relative" }}>
+    <div style={{ height: "1600px", position: "relative" }}>
       <Layout fixedHeader>
         <Header className='header-color'
           title={
             <span>
-              <strong>The Title</strong>
+              <strong>Chad Fishwick</strong>
             </span>
           }
         >
